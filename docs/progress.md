@@ -1,3 +1,4 @@
+- Fixed typo: renamed docker-compose.ymlx to docker-compose.yml
 ### Task 2 Complete — Dockerized frontend + backend
 - Backend image: devops-backend:local (node:16-alpine), exposed on 8080
 - Frontend image: devops-frontend:local (multi-stage build, served by nginx), exposed on 3000
