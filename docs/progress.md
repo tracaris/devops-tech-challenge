@@ -1,3 +1,22 @@
+### AWS access key rotation
+- Rotated AWS access keys for terraform-admin IAM user
+- Updated local AWS CLI credentials using `aws configure`
+- Verified new credentials with `aws sts get-caller-identity`
+- Configured AWS CLI locally using `aws configure` (region us-east-1, output json)
+- Verified credentials using `aws sts get-caller-identity`
+### Step 3.1: AWS IAM + CLI setup
+- Created IAM user `terraform-admin`
+- Attached AdministratorAccess policy
+- Generated access keys for CLI usage
+- Configured AWS CLI locally using `aws configure`
+- Verified authentication using `aws sts get-caller-identity`
+## Task 3 — Terraform + ECS (In Progress)
+
+### Step 3.1: Terraform project setup
+- Created Terraform directory structure (ecr, ecs, network, envs/dev)
+- Added AWS provider configuration
+- Defined base variables for region and project naming
+- No infrastructure applied yet (setup only)
 - Fixed typo: renamed docker-compose.ymlx to docker-compose.yml
 ### Task 2 Complete — Dockerized frontend + backend
 - Backend image: devops-backend:local (node:16-alpine), exposed on 8080
